@@ -1,3 +1,5 @@
+import pojo.Student;
+
 /**
  * 　1） start：
  　　用start方法来启动线程，真正实现了多线程运行，这时无需等待run方法体代码执行完毕而

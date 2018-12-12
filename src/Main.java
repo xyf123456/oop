@@ -1,18 +1,18 @@
+import pojo.Person;
+
 import java.io.*;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
-import java.text.SimpleDateFormat;
-import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) throws IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException, IOException, ClassNotFoundException {
 //        System.out.println("Hello World!");
 
-//        Student student1 = new Student("张三",23);
-//        Student student2 = new Student("张三",23);
-//        Student student1 = new Student(null,null);
-//        Student student2 = new Student(null,null);
+//        pojo.Student student1 = new pojo.Student("张三",23);
+//        pojo.Student student2 = new pojo.Student("张三",23);
+//        pojo.Student student1 = new pojo.Student(null,null);
+//        pojo.Student student2 = new pojo.Student(null,null);
 //        System.out.println(student1.toString());
 //        System.out.println(student2.toString());
 //        System.out.println(student1.equals(student2));
@@ -29,10 +29,10 @@ public class Main {
 //       thread1.start();
 //       thread2.start();
 
-       /* Student student1 = new Student("张三", 12);
-        Student student2 = new Student("李四", 13);
-        Student student3 = new Student("王五", 14);
-        List<Student> studentList = new ArrayList<>();
+       /* pojo.Student student1 = new pojo.Student("张三", 12);
+        pojo.Student student2 = new pojo.Student("李四", 13);
+        pojo.Student student3 = new pojo.Student("王五", 14);
+        List<pojo.Student> studentList = new ArrayList<>();
         studentList.add(student1);
         studentList.add(student2);
         studentList.add(student3);
@@ -52,7 +52,7 @@ public class Main {
         out.write(currDate);
         //缓冲字符输出流
         BufferedWriter bw = new BufferedWriter(out);
-        for (Student stu : studentList) {
+        for (pojo.Student stu : studentList) {
             bw.write(stu.toString());
             bw.newLine();//开启新的一行
             bw.flush();//刷新缓存
@@ -60,10 +60,10 @@ public class Main {
         bw.close();
         System.out.println("写入完成");*/
 
-        /*Student student1 = new Student("张三", 12);
-        Student student2 = new Student("李四", 13);
-        Student student3 = new Student("王五", 14);
-        Map<String,Student> map = new HashMap<String,Student>();
+        /*pojo.Student student1 = new pojo.Student("张三", 12);
+        pojo.Student student2 = new pojo.Student("李四", 13);
+        pojo.Student student3 = new pojo.Student("王五", 14);
+        Map<String,pojo.Student> map = new HashMap<String,pojo.Student>();
         map.put(student1.getName(),student1);
         map.put(student2.getName(),student2);
         map.put(student3.getName(),student3);
@@ -82,7 +82,7 @@ public class Main {
             file.createNewFile();
         }
         FileOutputStream fos=new FileOutputStream(file);
-        properties.store(fos,"Student Info");
+        properties.store(fos,"pojo.Student Info");
         System.out.println("写入完成");
 
         FileInputStream fis=new FileInputStream(file);
@@ -103,7 +103,7 @@ public class Main {
 //                第三种方式，（动态加载类，请大家区分编译和运行，编译时刻加载类是静态加载类，
 // 运行的加载的动态加载类）
         Class cls3 = null;
-        cls3 = Class.forName("Person");
+        cls3 = Class.forName("pojo.Person");
 //                System.out.println(cls1==cls3);
 //        我们完全可以通过类的类类型创建该类的对象实例，即通过cls1/cls2/cls3来创建
         // 调用newInstance方法创建Person类对象,再通过setter和getter进行赋值

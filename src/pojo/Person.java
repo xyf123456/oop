@@ -1,4 +1,4 @@
-/*
+package pojo;/*
  * java 使用反射实例化一个类对象
  * Java有着一个非常突出的动态相关机制：Reflection，用在Java身上指的是我们可以于运行时加载、探知、使用编译期间完全未知的classes。
  * 换句话说，Java程序可以加载一个运行时才得知名称的class，获悉其完整构造（但不包括methods定义），并生成其对象实体、或对其fields设值、

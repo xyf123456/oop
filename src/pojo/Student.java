@@ -1,5 +1,4 @@
-import java.util.Collection;
-import java.util.Set;
+package pojo;
 
 public class Student extends Object{
 
