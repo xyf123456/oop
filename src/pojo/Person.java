@@ -14,9 +14,16 @@ package pojo;/*
     与注解相结合的框架 例如Retrofit
     单纯的反射机制应用框架 例如EventBus 2.x
     动态生成类框架 例如Gson
+    为什么需要序列化:（第一个是便于存储，第二个是便于传输。）
+    1、存储对象在存储介质中，以便在下次使用的时候，可以很快捷的重建一个副本；
+    2、便于数据传输，尤其是在远程调用的时候！
  */
 
-public class Person {
+import java.io.Serializable;
+
+public class Person implements Serializable{
+
+    private static final long serialVersionUID = -535241601732658375L;
     private String name;
     private int age;
 
@@ -45,7 +52,11 @@ public class Person {
         this.age = age;
     }
 
+    @Override
     public String toString() {
-        return "姓名:" + name + "---年龄:" + age;
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
     }
 }

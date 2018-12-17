@@ -22,8 +22,8 @@ public class Main {
        /* MyThread thread1 = new MyThread("学生线程：");
         thread1.run();*/
 //        run和start
-       Thread thread1 = new Thread(new MyThread("线程A"));
-       Thread thread2 = new Thread(new MyThread("线程B"));
+//       Thread thread1 = new Thread(new MyThread("线程A"));
+//       Thread thread2 = new Thread(new MyThread("线程B"));
 //       thread1.run();
 //       thread2.run();
 //       thread1.start();
@@ -91,44 +91,44 @@ public class Main {
         properties.list(System.out);*/
 
 //        Person的实例化对象
-        Person person = new Person();
+//        Person person = new Person();
         // TODO Auto-generated method stub
 //        Person这个类也是一个实例对象，是Class类的实例对象
         //任何一个类都是Class实例对象
         // 获取Class类对象（三种方式）
-        Class<Person> cls1 = Person.class;
+//        Class<Person> cls1 = Person.class;
 //        第二种方式，已知该类的对象，通过getClass()调用
-        Class cls2 = person.getClass();
+//        Class cls2 = person.getClass();
 //        System.out.println(cls1==cls2);
 //                第三种方式，（动态加载类，请大家区分编译和运行，编译时刻加载类是静态加载类，
 // 运行的加载的动态加载类）
-        Class cls3 = null;
-        cls3 = Class.forName("pojo.Person");
+//        Class cls3 = null;
+//        cls3 = Class.forName("pojo.Person");
 //                System.out.println(cls1==cls3);
 //        我们完全可以通过类的类类型创建该类的对象实例，即通过cls1/cls2/cls3来创建
         // 调用newInstance方法创建Person类对象,再通过setter和getter进行赋值
-        Person p1 = cls1.newInstance();
-        Person p2 = (Person) cls2.newInstance();
-        Person p3 = (Person) cls3.newInstance();
-        p1.setAge(23);
-        p1.setName("实例化对象1");
-        System.out.println(p1);
-        p2.setAge(24);
-        p2.setName("实例化对象2");
-        System.out.println(p2);
-        p3.setAge(25);
-        p3.setName("实例化对象3");
-        System.out.println(p3);
+//        Person p1 = cls1.newInstance();
+//        Person p2 = (Person) cls2.newInstance();
+//        Person p3 = (Person) cls3.newInstance();
+//        p1.setAge(23);
+//        p1.setName("实例化对象1");
+//        System.out.println(p1);
+//        p2.setAge(24);
+//        p2.setName("实例化对象2");
+//        System.out.println(p2);
+//        p3.setAge(25);
+//        p3.setName("实例化对象3");
+//        System.out.println(p3);
 
         // 使用构造器类创建Person类对象
-        Constructor<Person> con1 = cls1.getConstructor(String.class, int.class);
-        Constructor<Person> con2 = cls2.getConstructor(String.class, int.class);
-        Constructor<Person> con3 = cls3.getConstructor(String.class, int.class);
-        Person person1 = con1.newInstance("实例化对象1", 31);
-        Person person2 = con2.newInstance("实例化对象2", 32);
-        Person person3 = con3.newInstance("实例化对象3", 33);
-        System.out.println(person1);
-        System.out.println(person2);
-        System.out.println(person3);
+//        Constructor<Person> con1 = cls1.getConstructor(String.class, int.class);
+//        Constructor<Person> con2 = cls2.getConstructor(String.class, int.class);
+//        Constructor<Person> con3 = cls3.getConstructor(String.class, int.class);
+//        Person person1 = con1.newInstance("实例化对象1", 31);
+//        Person person2 = con2.newInstance("实例化对象2", 32);
+//        Person person3 = con3.newInstance("实例化对象3", 33);
+//        System.out.println(person1);
+//        System.out.println(person2);
+//        System.out.println(person3);
     }
 }

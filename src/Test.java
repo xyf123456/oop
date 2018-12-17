@@ -68,7 +68,24 @@ public class Test {
 //        int n =4;
 //        System.out.println("4的阶乘："+index(n));
 
-        Test test = new Test();
-        System.out.println(test.add(3, 4));
+        /*Test test = new Test();
+        System.out.println(test.add(3, 4));*/
+
+        /*float f =1f;
+        f = f+0.1;//float和double不能直接转化
+        f = f+0.1f;//float和double不能直接转化
+        f = f+11.1;//float和double不能直接转化*/
+
+        /*Java常量池；产生的这种"常量"就会被放到常量池，常量池是JVM的一块特殊的内存空间。
+        有一个规范叫JSL（Java Language Specification，java语言规范）
+        对Integer的缓冲做了约束，规定其范围为：（-128-127）之间,
+        Byte,Short,Integer,Long,Character这5种整型的包装类也只是在对应值小于
+        等于127时才可使用对象池。超过了就要申请空间创建对象了
+        也就是说在范围内容，地址和内容均相同，超出范围则储存的地址发生变化*/
+        /*Integer i1=100,i2 = 100,i3 = -150,i4=-150;
+        System.out.println(i1==i2);
+        System.out.println(i3==i4);*/
+
+
     }
 }
