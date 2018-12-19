@@ -7,7 +7,13 @@ import java.util.Map;
 
 public class Test {
 
+    /**
+     * @ Description: 利用递归函数实现某个数的阶乘
+     * @params:  * @Param: n
+     * @return:java.lang.Integer
+     **/
     public static Integer index(int n) {
+
         int result;
         if (n < 0) {
             System.out.println("输入错误！");
@@ -47,34 +53,45 @@ public class Test {
     }
 
     public static void main(String[] args) {
-//        List<Map<String, Object>> mapList = new ArrayList<>();
-//        Map<String, Object> map = new HashMap<>();
-//        Person person1 = new Person("张三", 12);
-//        Person person2 = new Person("李四", 21);
-//        Person person3 = new Person("王五", 23);
-    /*    map.put("map1", "值1");
+/*+--------------------------------List集合中存放Map集合的数据------------------------+*/
+/*
+        List<Map<String, Object>> mapList = new ArrayList<>();
+        Map<String, Object> map = new HashMap<>();
+        Person person1 = new Person("张三", 12);
+        Person person2 = new Person("李四", 21);
+        Person person3 = new Person("王五", 23);
+        map.put("map1", "值1");
         map.put("map2", "值2");
-        map.put("map3", "值3");*/
-//        map.put("map1", person1);
-//        map.put("map2", person2);
-//        map.put("map3", person3);
-//        mapList.add(map);
-       /* for (int i = 0; i < mapList.size(); i++) {
+        map.put("map3", "值3");
+        map.put("map1", person1);
+        map.put("map2", person2);
+        map.put("map3", person3);
+        mapList.add(map);
+        for (int i = 0; i < mapList.size(); i++) {
             System.out.println(mapList.get(i));
-        }*/
-//        System.out.println(person1.getName());
-//        System.out.println(mapList.get(0).get("map2").toString());
+        }
+        System.out.println(person1.getName());
+        System.out.println(mapList.get(0).get("map2").toString());*/
 
-//        int n =4;
-//        System.out.println("4的阶乘："+index(n));
+/*+--------------------------------实现4的阶乘------------------------+*/
+/*
+        int n =4;
+        System.out.println("4的阶乘："+index(n));*/
 
-        /*Test test = new Test();
+
+
+/*+--------------------------------测试关于try catch finally 语句块中的return的影响------------------------+*/
+/*
+        Test test = new Test();
         System.out.println(test.add(3, 4));*/
 
+/*+--------------------------------关于float和double类型的表示形式和转换------------------------+*/
         /*float f =1f;
         f = f+0.1;//float和double不能直接转化
         f = f+0.1f;//float和double不能直接转化
         f = f+11.1;//float和double不能直接转化*/
+
+
 
         /*Java常量池；产生的这种"常量"就会被放到常量池，常量池是JVM的一块特殊的内存空间。
         有一个规范叫JSL（Java Language Specification，java语言规范）

@@ -9,6 +9,7 @@ public class Main {
     public static void main(String[] args) throws IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException, IOException, ClassNotFoundException {
 //        System.out.println("Hello World!");
 
+/*+--------------------------------对象的创建和比较，对象的hashCode------------------------+*/
 //        pojo.Student student1 = new pojo.Student("张三",23);
 //        pojo.Student student2 = new pojo.Student("张三",23);
 //        pojo.Student student1 = new pojo.Student(null,null);
@@ -18,6 +19,8 @@ public class Main {
 //        System.out.println(student1.equals(student2));
 //        System.out.println("student1哈希值:"+student1.hashCode());
 //        System.out.println("student2哈希值:"+student2.hashCode());
+
+/*+--------------------------------线程的开启（run和start的区别）------------------------+*/
 //        开启线程
        /* MyThread thread1 = new MyThread("学生线程：");
         thread1.run();*/
@@ -29,6 +32,7 @@ public class Main {
 //       thread1.start();
 //       thread2.start();
 
+/*+--------------------------------在文本文件中添加数据并通过字节流/字符流来读取其中存储的数据------------------------+*/
        /* pojo.Student student1 = new pojo.Student("张三", 12);
         pojo.Student student2 = new pojo.Student("李四", 13);
         pojo.Student student3 = new pojo.Student("王五", 14);
@@ -60,6 +64,8 @@ public class Main {
         bw.close();
         System.out.println("写入完成");*/
 
+
+/*+--------------------------------Properties中添加数据并通过字节流来读取其中存储的数据------------------------+*/
         /*pojo.Student student1 = new pojo.Student("张三", 12);
         pojo.Student student2 = new pojo.Student("李四", 13);
         pojo.Student student3 = new pojo.Student("王五", 14);
@@ -90,6 +96,8 @@ public class Main {
         //打印到控制台
         properties.list(System.out);*/
 
+
+/*+--------------------------------反射机制创建对象------------------------+*/
 //        Person的实例化对象
 //        Person person = new Person();
         // TODO Auto-generated method stub
